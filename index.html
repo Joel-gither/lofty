@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lofty</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700' rel='stylesheet' type='text/css'>
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+    <link href="css/flexslider.css" rel="stylesheet" />
+    <link href="css/main-style.css" rel="stylesheet" />
+  </head>
+  <body class="tm-gray-bg">
+    <div class="tm-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-4 col-sm-3 tm-site-name-container">
+            <a href="#" class="tm-site-name"
+              ><img src="img/loftylogo.png" class="logo"
+            ></a>
+          </div>
+          <div class="col-lg-6 col-md-8 col-sm-9">
+            <div class="mobile-menu-icon">
+              <i class="fa fa-bars"></i>
+            </div>
+            <nav class="tm-nav">
+              <ul>
+                <li>
+                  <a href="index.html" class="active"
+                    ><i class="fa-solid fa-house-user"></i> Home</a
+                  >
+                </li>
+                <li>
+                  <a href="about.html"
+                    ><i class="fa-solid fa-user"></i> About Lofty</a
+                  >
+                </li>
+                <li class="dropdown">
+                  <a href="campus.html" class=" dropdown-toggle" data-toggle="dropdown">
+                    <i class="fa-solid fa-file-invoice"></i> Shop <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu">
+                     
+                    <li><a href="campus.html#computersmain">Desktops</a></li>
+                    <li><a href="campus.html#laptopsmain">Laptops</a></li>
+                    <li><a href="campus.html#storagesmain">Storage</a></li>
+                    <li><a href="campus.html#gadgetsmain">Gadgets</a></li>
+                    <li><a href="campus.html#printersmain">Printers</a></li>
+                    <li><a href="campus.html#chargersmain">Chargers</a></li>
+                  </ul>
+                </li>
+               
+                <li>
+                  <a href="contact.html"
+                    ><i class="fa-solid fa-headset"></i> Contact</a
+                  >
+                </li>
+                <li>
+                  <a href="cart.html"
+                    ><i class="fa-solid fa-cart-shopping"></i>Cart<div class="cart-quantity">0</div></a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="tm-banner">
+      <div class="flexslider flexslider-banner">
+        <ul class="slides">
+          <li>
+            <div class="tm-banner-inner"></div>
+            <img src="img/loftybanner.jpg" alt="Image" />
+          </li>
+          <li>
+            <div class="tm-banner-inner"></div>
+            <img src="img/loftyn3.jpg" alt="Image" />
+          </li>
+          <li>
+            <div class="tm-banner-inner"></div>
+            <img src="img/loftyn1.jpg" alt="Image" />
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="popup" id="poplogin">
+      <span class="closelogin">X</span>
+      <h1 class="login">Login</h1>
+      <form id="loginForm" method="POST" action="login.php">
+        <input type="text" placeholder="User Name" name="username" class="inp" required />
+        <input
+          type="password"
+          placeholder="Password"
+          name="password"
+          class="inp"
+          required
+        />
+        <span class="forgetpassword"><h3>Forgot Password</h3></span>
+        <button type="submit" class="lgbtn">Login</button>
+      </form>
+      <span class="nopassword"
+        ><h3>Not a member? <a href="signup.html" target="_blank">SignUp</a></h3></span
+      >
+    </div>
+
+    
+    <span id="traveltop"></span>
+    <section class="container tm-home-section-1" id="more">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-6">
+          <div class="tm-home-box-1 tm-home-box-1-2 tm-home-box-1-center">
+            <img
+              src="img/pngwing.com (90).png"
+              alt="image"
+              class="img-responsive3"
+              id="buy"
+            />
+            <a href=" /campus.html#computersmain">
+              <div class="tm-green-gradient-bg tm-city-price-container">
+                <span>Desktops</span>
+                <span>30% OFF</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-6">
+          <div class="tm-home-box-1 tm-home-box-1-2 tm-home-box-1-center">
+            <img
+              src="img/pngwing.com (91).png"
+              alt="image"
+              class="img-responsive2"
+            />
+            <a href="/campus.html#laptopsmain">
+              <div class="tm-green-gradient-bg tm-city-price-container">
+                <span>Laptops</span>
+                <span>10% OFF</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6">
+          <div class="tm-home-box-1 tm-home-box-1-2 tm-home-box-1-right">
+            <img
+              src="img/pngwing.com (17).png"
+              alt="image"
+              class="img-responsive3"
+            />
+            <a href="/campus.html#gadgetsmain">
+              <div class="tm-red-gradient-bg tm-city-price-container">
+                <span> Gadgets</span>
+                <span>25% OFF</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="roller" id="roller1">
+        <div class="controls">
+          <video class="vd-play" autoplay muted loop playsinline>
+            <source src="img/lofty2.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <form class="paymentboda">
+          <div class="close" id="close">x</div>
+          <div class="pay">
+            <h3>MAKE PAYMENT</h3>
+            <label>Your Name</label>
+            <input type="text" placeholder="name" />
+            <label>Your Email </label>
+            <input type="text" placeholder="email" />
+            <label>Your Phone Number</label>
+            <input type="text" placeholder="name" />
+            <label>Choose Network</label>
+
+            <div class="payer">
+              <span><img src="img/Airtel.png" class="payer-img" /></span>
+              <span><img src="img/mtn.jpg" class="payer-img" /></span>
+            </div>
+            <button class="clear">CALL NOW</button>
+          </div>
+        </form>
+      </div>
+      <div class="brand-content" id="content1">
+        <div class="brand-ex">
+          <a href="/campus.html#laptopsmain"
+            ><img src="img/pngwing.com (89).png" class="brand-img"
+          /></a>
+          <p>Laptops</p>
+        </div>
+        <div class="brand-ex">
+          <a href="/campus.html#gadgetsmain"
+            ><img src="img/pngwing.com (86).png" class="brand-img"
+          /></a>
+          <p>Maintenance</p>
+        </div>
+        <div class="brand-ex">
+          <a href="/campus.html#computersmain"
+            ><img src="img/pngwing.com (90).png" class="brand-img"
+          /></a>
+          <p>Desktops</p>
+        </div>
+        <div class="brand-ex">
+          <a href="/campus.html#laptopsmain"
+            ><img src="img/pngwing.com (89).png" class="brand-img"
+          /></a>
+          <p>Laptops</p>
+        </div>
+        <div class="brand-ex">
+          <a href="/campus.html#gadgetsmain"
+            ><img src="img/pngwing.com (86).png" class="brand-img"
+          /></a>
+          <p>Maintenance</p>
+        </div>
+        <div class="brand-ex">
+          <a href="/campus.html#computersmain"
+            ><img src="img/pngwing.com (90).png" class="brand-img"
+          /></a>
+          <p>Desktops</p>
+        </div>
+        <div class="brand-ex">
+          <a href="/campus.html#chargersmain"
+            ><img src="img/pngwing.com (87).png" class="brand-img"
+          /></a>
+          <p>Chargers</p>
+        </div>
+        <div class="brand-ex">
+          <a href="/campus.html#storagesmainsmain"
+            ><img src="img/pngwing.com (12).png" class="brand-img"
+          /></a>
+          <p>Storage</p>
+        </div>
+        <div class="brand-ex">
+          <a href="/campus.html#storagesmain"
+            ><img src="img/pngwing.com (7).png" class="brand-img"
+          /></a>
+          <p>RamChips</p>
+        </div>
+        <div class="brand-ex">
+          <a href="/campus.html#gadgetsmain"
+            ><img src="img/pngwing.com (93).png" class="brand-img"
+          /></a>
+          <p>KeyBoards</p>
+        </div>
+        <div class="brand-ex" id="travel">
+          <span
+            ><a href="#roller1" id="travel12" class="travel"
+              ><img src="img/pngwing.com (10).png" class="brand-img" id="travel" /></a
+          ></span>
+          <p>Cables</p>
+        </div>
+        <div class="brand-ex">
+          <a href="/campus.html#laptopsmain"
+            ><img src="img/pngwing.com (89).png" class="brand-img"
+          /></a>
+          <p>Laptops</p>
+        </div>
+        <div class="brand-ex">
+          <a href="/campus.html#gadgetsmain"
+            ><img src="img/pngwing.com (86).png" class="brand-img"
+          /></a>
+          <p>Maintenance</p>
+        </div>
+        <div class="brand-ex">
+          <a href="/campus.html#computersmain"
+            ><img src="img/pngwing.com (90).png" class="brand-img"
+          /></a>
+          <p>Desktops</p>
+        </div>
+        <div class="brand-ex">
+          <a href="/campus.html#chargersmain"
+            ><img src="img/pngwing.com (87).png" class="brand-img"
+          /></a>
+          <p>Chargers</p>
+        </div>
+        <div class="brand-ex">
+          <a href="/campus.html#storagesmainsmain"
+            ><img src="img/pngwing.com (12).png" class="brand-img"
+          /></a>
+          <p>Storage</p>
+        </div>
+        <div class="brand-ex">
+          <a href="/campus.html#storagesmain"
+            ><img src="img/pngwing.com (7).png" class="brand-img"
+          /></a>
+          <p>RamChips</p>
+        </div>
+        <div class="brand-ex">
+          <a href="/campus.html#gadgetsmain"
+            ><img src="img/pngwing.com (93).png" class="brand-img"
+          /></a>
+          <p>KeyBoards</p>
+        </div>
+        <div class="brand-ex" id="travel">
+          <span
+            ><a href="#roller1" id="travel12" class="travel"
+              ><img src="img/pngwing.com (10).png" class="brand-img" id="travel" /></a
+          ></span>
+          <p>Cables</p>
+        </div>
+      </div>
+      <div class="control">
+        <button class="next1" id="next1"><</button>
+        <button class="prev1" id="prev1">></button>
+      </div>
+      <div class="section-margin-top">
+        <div class="row">
+          <div class="tm-section-header">
+            <div class="col-lg-3 col-md-3 col-sm-3"><hr /></div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <h2 class="tm-section-title">TOP OFFERS</h2>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3"><hr /></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="js-product-grid">
+         </div>
+        <div class="row"></div>
+      </div>
+    </section>
+
+    <section class="tm-white-bg section-padding-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="tm-section-header section-margin-top">
+            <div class="col-lg-4 col-md-3 col-sm-3"><hr /></div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+              <h2 class="tm-section-title">POPULAR PRODUCTS</h2>
+            </div>
+            <div class="col-lg-4 col-md-3 col-sm-3"><hr /></div>
+          </div>
+          <div class="col-lg-6">
+            <div class="tm-home-box-3 cart-row">
+              <div class="tm-home-box-3-img-container">
+                <img
+                  src="img/pngwing.com (3).png"
+                  alt="image"
+                  class="img-responsive1"
+                />
+              </div>
+              <div class="tm-home-box-3-info">
+                <p class="tm-home-box-3-description">
+                  Epson Colored Printer and Black and white<br /><span
+                    class="cart-price1"
+                    >UGX 2,500,000 </span
+                  ><br /><del> UGX 30,000</del>
+                </p>
+
+                <div class="tm-home-box-2-container">
+                  <a href="#" class="tm-home-box-2-link"
+                    ><i class="fa fa-heart tm-home-box-2-icon border-right"></i
+                  ></a>
+                  <span><button class="add-to-cart" data-product-id="34k 34k 6">ADD TO CART</button></span>
+                  <a href="#" class="tm-home-box-2-link"
+                    ><i class="fa fa-edit tm-home-box-2-icon border-left"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="tm-home-box-3 cart-row">
+              <div class="tm-home-box-3-img-container">
+                <img
+                  src="img/pngwing.com (87).png"
+                  alt="image"
+                  class="img-responsive1"
+                />
+              </div>
+              <div class="tm-home-box-3-info">
+                <p class="tm-home-box-3-description">
+                  Charging adpter with usb type C <br /><span
+                    class="cart-price1"
+                    >UGX 15.000 </span
+                  ><br /><del> UGX 20,000</del>
+                </p>
+                <div class="tm-home-box-2-container">
+                  <a href="#" class="tm-home-box-2-link"
+                    ><i class="fa fa-heart tm-home-box-2-icon border-right"></i
+                  ></a>
+                  <span><button class="add-to-cart" data-product-id="34k 34k 38">ADD TO CART</button></span>
+                  <a href="#" class="tm-home-box-2-link"
+                    ><i class="fa fa-edit tm-home-box-2-icon border-left"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="tm-home-box-3 cart-row">
+              <div class="tm-home-box-3-img-container">
+                <img
+                  src="img/speaker2.jpeg"
+                  alt="image"
+                  class="img-responsive1"
+                />
+              </div>
+              <div class="tm-home-box-3-info">
+                <p class="tm-home-box-3-description">
+                  Wireless Bluetooth speaker big base <br /><span
+                    class="cart-price1"
+                    >UGX 150.000 </span
+                  ><br /><del> UGX 250,000</del>
+                </p>
+                <div class="tm-home-box-2-container">
+                  <a href="#" class="tm-home-box-2-link"
+                    ><i class="fa fa-heart tm-home-box-2-icon border-right"></i
+                  ></a>
+                  <span><button class="add-to-cart" data-product-id="34k 34k 8">ADD TO CART</button></span>
+                  >
+                  <a href="#" class="tm-home-box-2-link"
+                    ><i class="fa fa-edit tm-home-box-2-icon border-left"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="tm-home-box-3 cart-row">
+              <div class="tm-home-box-3-img-container">
+                <img
+                  src="img/syscase.jpg"
+                  alt="image"
+                  class="img-responsive1"
+                />
+              </div>
+              <div class="tm-home-box-3-info">
+                <p class="tm-home-box-3-description">
+                  Dell core i5 1TB  <br /><span
+                    class="cart-price1"
+                    >UGX 25.000 </span
+                  ><br /><del> UGX 30,000</del>
+                </p>
+                <div class="tm-home-box-2-container">
+                  <a href="#" class="tm-home-box-2-link"
+                    ><i class="fa fa-heart tm-home-box-2-icon border-right"></i
+                  ></a>
+                  <span><button class="add-to-cart" data-product-id="34k 34k 9">ADD TO CART</button></span>
+                  <a href="#" class="tm-home-box-2-link"
+                    ><i class="fa fa-edit tm-home-box-2-icon border-left"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="tm-black-bg">
+      <div class="container">
+        <div class="ft-cont">
+          <div class="ft-item1">
+            <h3>HELP</h3>
+
+            <ul>
+              <li><a href="index.html" class="active">Payments</a></li>
+              <li><a href="about.html">Shipping</a></li>
+              <li><a href="campus.html">Cancellation & Return</a></li>
+              <li><a href="contact.html">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="ft-item1">
+            <h3>PRODUCT</h3>
+
+            <ul>
+              <li>
+                <a href="campus.html#computersmain" class="active">Desktops</a>
+              </li>
+              <li><a href="campus.html#gadgetsmain">Gadgets</a></li>
+              <li><a href="campus.html#storagesmain" target="_top">Storage</a></li>
+              <li><a href="campus.html#printersmain">Printers</a></li>
+            </ul>
+          </div>
+          <div class="ft-item1">
+            <h3>ABOUT US</h3>
+
+            <ul>
+              <li><a href="contact.html#contactus1" class="active">Reach out</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="campus.html">Careers</a></li>
+              <li><a href="contact.html">Corporate</a></li>
+            </ul>
+          </div>
+
+          <div class="ft-item2">
+            <div class="slider-social">
+              <h3>Socials</h3>
+              <a href="#" class="tm-social-icon"
+                ><i class="fa fa-twitter"></i
+              ></a>
+              <a href="#" class="tm-social-icon"
+                ><i class="fa fa-facebook"></i
+              ></a>
+              <a href="#" class="tm-social-icon"
+                ><i class="fa fa-pinterest"></i
+              ></a>
+              <a href="#" class="tm-social-icon"
+                ><i class="fa fa-google-plus"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <p class="tm-copyright-text">
+          All Rights Reserved Copyright &copy; 2025 LoFTY House of Technology
+        </p>
+      </div>
+    </footer>
+    
+     <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/moment.js"></script>
+    <!-- moment.js -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- bootstrap js -->
+    <script
+      type="text/javascript"
+      src="js/bootstrap-datetimepicker.min.js"
+    ></script>
+    <!-- bootstrap date time picker js, http://eonasdan.github.io/bootstrap-datetimepicker/ -->
+    <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+    <script src="js/products.js"></script>
+    <script type="text/javascript" src="js/cart.js"></script>
+    <script type="text/javascript" src="js/campus-script.js"></script>
+    <script>
+      $(function () {
+        $("#hotelCarTabs a").click(function (e) {
+          e.preventDefault();
+          $(this).tab("show");
+        });
+
+        $(".date").datetimepicker({
+          format: "MM/DD/YYYY",
+        });
+        $(".date-time").datetimepicker();
+
+        $("a[href*=#]:not([href=#])").click(function () {
+          if (
+            location.pathname.replace(/^\//, "") ==
+              this.pathname.replace(/^\//, "") &&
+            location.hostname == this.hostname
+          ) {
+            var target = $(this.hash);
+            target = target.length
+              ? target
+              : $("[name=" + this.hash.slice(1) + "]");
+            if (target.length) {
+              $("html,body").animate(
+                {
+                  scrollTop: target.offset().top,
+                },
+                1000
+              );
+              return false;
+            }
+          }
+        });
+      });
+
+      $(window).load(function () {
+        // Vimeo API nonsense
+
+        /*
+				var player = document.getElementById('player_1');
+				$f(player).addEvent('ready', ready);
+				
+				function addEvent(element, eventName, callback) {
+					if (element.addEventListener) {
+					element.addEventListener(eventName, callback, false)
+					} else {
+					element.attachEvent(eventName, callback, false);
+					}
+				}
+				
+				function ready(player_id) {
+					var froogaloop = $f(player_id);
+					froogaloop.addEvent('play', function(data) {
+					$('.flexslider').flexslider("pause");
+					});
+					froogaloop.addEvent('pause', function(data) {
+					$('.flexslider').flexslider("play");
+					});
+				}
+	*/
+
+        // Call fitVid before FlexSlider initializes, so the proper initial height can be retrieved.
+        /*
+
+				$(".flexslider")
+					.fitVids()
+					.flexslider({
+					animation: "slide",
+					useCSS: false,
+					animationLoop: false,
+					smoothHeight: true,
+					controlNav: false,
+					before: function(slider){
+						$f(player).api('pause');
+					}
+				});
+	*/
+
+        //	For images only
+        $(".flexslider").flexslider({
+          controlNav: false,
+        });
+      });
+
+      const travelShow = document.getElementById("travel");
+      const paymentShow = document.querySelector(".roller");
+      const closePayment = document.getElementById("close");
+
+      travelShow.addEventListener("click", () => {
+        paymentShow.style.display = "flex";
+      });
+
+      closePayment.addEventListener("click", () => {
+        paymentShow.style.display = "none";
+      });
+
+      const lineImage = document.getElementById("travel12");
+      const paymentCart = document.querySelector(".roller");
+      const closeCart = document.getElementById("close");
+
+      lineImage.addEventListener("click", () => {
+        paymentCart.style.display = "flex";
+      });
+
+      closeCart.addEventListener("click", () => {
+        paymentCart.style.display = "none";
+      });
+
+      const buyComputer = document.getElementById("buy");
+      const showComputer = document.getElementById("price");
+       
+      document
+        .querySelector(".closelogin")
+        .addEventListener("click", function () {
+          document.querySelector("#poplogin").style.display = "none";
+        });
+
+      window.addEventListener("load", function () {
+        setTimeout(function Open(event) {
+          document.querySelector("#poplogin").style.display = "block";
+        }, 1000);
+      });
+
+      document.addEventListener('DOMContentLoaded', function () {
+const branded = document.querySelector('.brand-content');
+const items = document.querySelectorAll('.brand-ex');
+const nextButton = document.getElementById('next1');
+const prevButton = document.getElementById('prev1');
+const itemWidth = items[0].offsetWidth;
+let currentIndex = 0;
+
+// Function to update slider position
+function updateSlider() {
+branded.style.transition = 'transform 0.5s ease';
+branded.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+}
+
+//Clone First Items
+function cloneItems() {
+const firstItemClone = items[0].cloneNode(true);
+const secondItemClone = items[1].cloneNode(true);
+branded.appendChild(firstItemClone);
+branded.appendChild(secondItemClone);
+}
+// Remove Clones
+function removeClones() {
+const clones = document.querySelectorAll('.itembranded:not([id="item"])');
+clones.forEach(clone => brandedr.removeChild(clone));
+}
+
+// Event listeners for next and previous buttons
+nextButton.addEventListener('click', () => {
+currentIndex++;
+if (currentIndex >= items.length) {
+currentIndex = 0;
+removeClones();
+cloneItems();
+branded.style.transition = 'none'; // Disable transition for instant jump
+branded.style.transform = `translateX(0px)`;
+requestAnimationFrame(() => {
+branded.style.transition = 'transform 0.5s ease'; // Re-enable transition
+updateSlider()
+});
+
+} else {
+updateSlider();
+}
+});
+
+prevButton.addEventListener('click', () => {
+currentIndex--;
+if (currentIndex < 0) {
+removeClones();
+cloneItems();
+currentIndex = items.length - 1;
+branded.style.transition = 'none'; // Disable transition for instant jump
+branded.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+requestAnimationFrame(() => {
+branded.style.transition = 'transform 0.5s ease'; // Re-enable transition
+
+});
+
+}
+updateSlider();
+});
+
+//automatic slider
+let slideInterval = setInterval(() => {
+nextButton.click();
+}, 3000);
+
+// Stop automatic sliding when user interacts
+branded.addEventListener('mouseover', () => {
+clearInterval(slideInterval);
+});
+
+// Restart automatic sliding when user is done interacting
+branded.addEventListener('mouseout', () => {
+slideInterval = setInterval(() => {
+nextButton.click();
+}, 3000);
+});
+
+//cloneItems()
+updateSlider();
+});
+
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+  const username = document.querySelector('input[name="username"]').value;
+  const password = document.querySelector('input[name="password"]').value;
+
+  if (username.trim() === '' || password.trim() === '') {
+    alert('Please fill in all fields.');
+    event.preventDefault(); // Prevent form submission
+  }
+});
+
+    </script>
+  </body>
+</html>
