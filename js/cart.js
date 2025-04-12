@@ -515,6 +515,7 @@ updateCartQuantity()
 
 
 // Add this to your campus-script.js or a separate JS file
+/*
 $(document).ready(function () {
     $(".dropdown-toggle").click(function (e) {
       e.preventDefault(); // Prevent the default link behavior
@@ -528,4 +529,4 @@ $(document).ready(function () {
       }
     });
   });
-  
+  */
