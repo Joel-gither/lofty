@@ -33,19 +33,11 @@
     <ul>
         <li><a href="index.html"><i class="fa-solid fa-house-user"></i> Home</a></li>
         <li><a href="about.html"><i class="fa-solid fa-user"></i> About Lofty</a></li>
-        <li class="dropdown">
-          <a href="campus.html" class=" dropdown-toggle" data-toggle="dropdown">
-            <i class="fa-solid fa-file-invoice"></i> Shop <span class="caret"></span>
+        <li>   
+          <a href="campus.html">
+            <i class="fa-solid fa-file-invoice"></i> Shop  
           </a>
-          <ul class="dropdown-menu">
-            
-            <li><a href="campus.html#computersmain">Desktops</a></li>
-            <li><a href="#laptopsmain">Laptops</a></li>
-            <li><a href="campus.html#storagesmain">Storage</a></li>
-            <li><a href="campus.html#gadgetsmain">Gadgets</a></li>
-            <li><a href="campus.html#printersmain">Printers</a></li>
-            <li><a href="campus.html#chargersmain">Chargers</a></li>
-          </ul>
+          
         </li>
         <li><a href="contact.html"><i class="fa-solid fa-headset"></i> Contact</a></li>
         <li><a href="cart.html" class="active"><i class="fa-solid fa-cart-shopping"></i>Cart<div class="cart-quantity">0</div></a></li>
@@ -53,6 +45,26 @@
     </nav>		
     </div>				
     </div>
+    <section class="search-bar-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+            <form action="#" class="search-form">
+              <div class="input-group">
+                <input type="search" class="form-control" id="productSearchInput" placeholder="Search for products, brands, and more..." autocomplete="off">  
+                <span class="input-group-btn">
+                  <button class="btn btn-warning" type="submit" id="searchButton">
+                    <i class="fa fa-search"></i> Search
+                  </button>
+                </span>
+              </div>
+               
+              <div id="searchResults" class="search-results-container"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 </div>	  	
 </div>
 
@@ -77,20 +89,24 @@
           <div class="js-order-summary "><span class="cartItems">
   </span>
           </div>
-          <a href="https://paystack.com/pay/tspien93d1" target="_blank"  ><button  >CHECKOUT</button></a>
+           
+          <a href="https://paystack.com/pay/tspien93d1" target="_blank"  ><button   class="btn-checkout">CHECKOUT</button></a>
       </div>
+      <hr>
+      <p>We offer Standard Delivery (Fee outside campus 2000ugx in 24hrs), Express Delivery (3000ugx to Campus and outside campus), and potentially Same-Day Delivery within Campus (2000ugx). Shipping costs are calculated based on the weight of your order and your delivery location. Please see our <a href="shipping.html">Shipping and Delivery Policy</a> for more details.</p>
+      <hr>
       <div class="row">
           <div class="js-product-grid">
           </div>
           <div class="row"></div>
       </div>
-      <h3 class="wish">Wish List</h3>
+      <!--<h3 class="wish">Wish List</h3>
       <div class="wish-slider-container">
           <button class="wish-prev">&lt;</button>
           <div class="wish-slider-wrapper">
              </div>
           <button class="wish-next">&gt;</button>
-      </div>
+      </div>-->
 
 
   </div>
